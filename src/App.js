@@ -1,10 +1,14 @@
 import React from 'react'
 import './App.css';
+import 'fontsource-roboto'
+import NavBar from './NavBar.js'
+import Feed from './Feed.js'
 
 function App() {
   return (
     <div>
-     <h1>hello world</h1>
+    <NavBar />
+    <Feed />
     </div>
   );
 }
