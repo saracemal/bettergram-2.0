@@ -4,15 +4,23 @@ import styled from 'styled-components'
 
 function NavBar() {
   return (
-    <div>
+    <Nav>
       <NewPostBtn />
      <Title>BetterGram</Title>
-     <h5>welcome, Sara</h5>
-    </div>
+     <Greeting>welcome, Sara</Greeting>
+    </Nav>
   );
 }
 
 export default NavBar;
+
+const Nav = styled.div`
+  text-align: space-evenly;
+`
+
+const Greeting = styled.h4`
+  text-align: space-evenly;
+`
 
 const Title = styled.h1`
   text-align: center;

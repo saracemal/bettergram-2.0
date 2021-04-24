@@ -1,27 +1,12 @@
-photos = {
+photos = [
     photo1 = {
-        url = 
-        caption =
-        alt_caption =
+        img_url: www.randomkittengenerator.com/cats/84807.1.jpg ,
+        caption: ,
+        alt_caption: ,
+        likes: ,
     },
     photo2 = {
-        url =
-        caption =
-        alt_caption =
-    },
-    photo3 = {
-        url =
-        caption =
-        alt_caption =
-    },
-    photo4 = {
-        url =
-        caption =
-        alt_caption =
-    },
-    photo5 = {
-        url =
-        caption =
-        alt_caption =
-    }
-}
+        img_url: ,
+        caption: ,
+        alt_caption:
+]
