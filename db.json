@@ -1,0 +1,18 @@
+{
+    "photos": [
+        {
+            "id": 1,
+            "img": "./photos/cat photo 1 .jpeg",
+            "likes": 16,
+            "caption": "sometimes I like to be a burrito",
+            "description": "Small kitten wrapped in a blue towel."
+        },
+        {
+            "id": 2,
+            "img": "./photos/random cat 2",
+            "likes": 4,
+            "caption": "I'll have another!" ,
+            "description": "White kitten with a brown striped face sits in a martini glass."
+        }
+    ]
+}

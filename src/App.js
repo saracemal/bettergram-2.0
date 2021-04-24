@@ -10,17 +10,31 @@ import { useState, useEffect } from 'react';
 function App() {
   const [light, setLight] = useState(true)
   const [dark, setDark] = useState(false)
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8000/photos")
+      .then((r) => r.json())
+      .then((postArray) => {
+        setPosts(postArray);
+      });  
+  }, []);
+
+  const handleAddPost = (newPosts) => {
+    const updatedPostArray = [...posts, newPost];
+    setImages(updatedImgArray)
+  }
 
   return (
     <AppDiv>
-      <NavBar />
-      <Feed  />
+      <NavBar onAddImage={handleAddImage}/>
+      <Feed posts={posts} />
     </AppDiv>
   );
 }
 
 export default App;
-
+// make background color regular white for light, and then dark gray for setDark
 const AppDiv = styled.div`
 
 `
