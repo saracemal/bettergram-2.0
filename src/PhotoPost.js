@@ -2,15 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import Divider from '@material-ui/core/Divider';
 
-function PhotoPost({images}) {
+function PhotoPost({image}) {
+  const {caption, likes, description, img} = image;
   return (
     <PhotoContainer>
-      <p>i am a photo</p>
-      <Likes>likes</Likes>
+      <p>{img}</p>
+      <Likes>{likes}</Likes>
       <Divider variant="inset" component="li" />
-      <Caption>caption</Caption>
+      <Caption>{caption}</Caption>
       <Divider variant="inset" component="li" />
-      <ImgDesc>image description</ImgDesc>
+      <ImgDesc>{description}</ImgDesc>
     </PhotoContainer>
   );
 }
